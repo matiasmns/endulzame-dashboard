@@ -7,6 +7,15 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   db: { schema: 'endulzame_project' },
 })
 
+export interface Proveedor {
+  id: string
+  created_at: string | null
+  nombre_proveedor: string
+  categoria: string
+  numero_de_contacto: string
+  ranking: number
+}
+
 export interface Pedido {
   id: string
   tipo_seccion: string

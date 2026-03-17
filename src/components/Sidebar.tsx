@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from 'react-router-dom'
-import { ClipboardList, LogOut, CalendarDays, X } from 'lucide-react'
+import { ClipboardList, LogOut, CalendarDays, X, Store } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 import logoS from '../assets/img/Logo_S.png'
 import background02 from '../assets/img/background/background_02.png'
@@ -14,6 +14,11 @@ const navItems = [
     to: '/home/calendario',
     label: 'Calendario',
     icon: <CalendarDays size={18} />,
+  },
+  {
+    to: '/home/proveedores',
+    label: 'Proveedores',
+    icon: <Store size={18} />,
   },
 ]
 
