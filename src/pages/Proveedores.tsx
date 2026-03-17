@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { Pencil, X, Eye, Star, Trash2, Store, Plus, MessageCircle } from 'lucide-react'
 import { supabase, type Proveedor } from '../lib/supabase'
 
-const CATEGORIAS_FILTER = ['todas', 'ingredientes', 'packaging', 'decoración', 'equipamiento', 'otros']
 
 // ── Ranking Badge ─────────────────────────────────────────────────────────────
 function RankingBadge({ ranking }: { ranking: number }) {
